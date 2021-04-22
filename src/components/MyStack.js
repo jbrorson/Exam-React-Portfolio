@@ -6,11 +6,13 @@ function MyStack() {
   return (
     <div
       style={{ background: '#ebf8ff' }}
-      className="min-h-screen flex flex-col items-center justify-center font-dosis"
+      className="min-h-screen flex flex-col items-center justify-center"
       id="stack"
     >
-      <h1 className="text-5xl font-bold">Stack I use</h1>
-      <div className="flex flex-wrap justify-center mt-10">
+      <h1
+        className="text-5xl font-bold text-gray-800 mb-12"
+        style={{ fontFamily: 'lobster' }}>Stack I use</h1>
+      <div className="flex flex-wrap justify-center">
         {content.stack.tech.map((tech, index) => {
           return (
             <span
@@ -22,7 +24,7 @@ function MyStack() {
           );
         })}
       </div>
-      <p className="w-11/12 md:max-w-xl text-xl text-center mt-10">
+      <p className="w-11/12 md:max-w-xl text-xl text-center mt-10 text-gray-700">
         {content.stack.desc}
       </p>
     </div>
