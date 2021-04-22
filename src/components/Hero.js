@@ -40,7 +40,7 @@ function Header() {
             />
           </h1>
           <ScrollLink to="stack" smooth={true}>
-            <button className="animate-float bg-red-500 px-5 py-3 uppercase mt-10 rounded-lg text-white">
+            <button className="animate-float bg-red-500 px-5 py-3 uppercase mt-10 rounded-lg text-white font-semibold sm:text-base">
               {content.header.btnText}
             </button>
           </ScrollLink>
