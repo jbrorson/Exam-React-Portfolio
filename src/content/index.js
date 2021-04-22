@@ -1,6 +1,6 @@
 export default {
   nav: {
-    logo: 'J',
+    logo: 'JB.',
     links: [
       { text: 'Work', to: 'mywork' },
       { text: 'Contact', to: 'mycontact' },
