@@ -54,56 +54,55 @@ export default function Contact() {
         <div className="flex flex-col space-y-8 justify-between">
           <div>
             <h1 className="font-bold text-4xl tracking-wide">Contact me</h1>
-            <p className="pt-2 text-red-300 text-sm">
-              Reach out to me by filling in this form<br />
-                Reach out to me by filling in this form
-                Reach out to me by filling in this form
+            <p className="pt-2 text-red-300 text-sm sm:text-base">
+              Reach out to me by filling in this form.<br />
+              I will definetly like to here from you. Maybe we could meet for a coffee?
             </p>
           </div>
           <div className="flex flex-col space-y-6">
             <div className="inline-flex space-x-2 items-center">
               <ion-icon
                 name="call-outline"
-                class="text-red-300 text-xl">
+                class="text-red-300 text-xl sm:text-3xl">
               </ion-icon>
               <span>0721-77 62 72</span>
             </div>
             <div className="inline-flex space-x-2 items-center">
               <ion-icon
                 name="mail-outline"
-                class="text-red-300 text-xl">
+                class="text-red-300 text-xl sm:text-3xl">
               </ion-icon>
               <span>josefine.brorson@gmail.com</span>
             </div>
             <div className="inline-flex space-x-2 items-center">
               <ion-icon
                 name="pin-outline"
-                class="text-red-300 text-xl">
+                class="text-red-300 text-xl sm:text-3xl">
               </ion-icon>
               <span>Stockholm, Sweden</span>
             </div>
           </div>
           <div className="flex space-x-4 text-lg">
             <a href="#">
-              <ion-icon name="logo-linkedin"></ion-icon
+              <ion-icon name="logo-linkedin" class="sm:text-3xl"></ion-icon
               ></a>
             <a href="#">
-              <ion-icon name="logo-github"></ion-icon
+              <ion-icon name="logo-github" class="sm:text-3xl"></ion-icon
               ></a>
             <a href="#">
-              <ion-icon name="logo-instagram"></ion-icon
+              <ion-icon name="logo-instagram" class="sm:text-3xl"></ion-icon
               ></a>
           </div>
         </div>
         <div>
-          <div className="bg-white rounded-xl shadow-lg p-8 text-gray-700 md:w-80">
+          <div className="bg-white rounded-xl shadow-lg p-8 text-gray-700 sm:w-80">
             <form
               // onSubmit={handleSubmit}
               onSubmit={sendEmail}
               action=""
               className="flex flex-col space-y-4">
               <div>
-                <label for="" className="text-sm">Subject</label>
+                <label for="" className="text-sm sm:text-base">Subject</label>
                 <input
                   required
                   type="text"
@@ -116,7 +115,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label for="" className="text-sm">Your name</label>
+                <label for="" className="text-sm sm:text-base">Your name</label>
                 <input
                   required
                   type="text"
@@ -129,7 +128,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label for="" className="text-sm">Your email</label>
+                <label for="" className="text-sm sm:text-base">Your email</label>
                 <input
                   required
                   type="email"
@@ -142,7 +141,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label for="" className="text-sm">Your message</label>
+                <label for="" className="text-sm sm:text-base">Your message</label>
                 <textarea
                   required
                   rows="4"
@@ -158,7 +157,7 @@ export default function Contact() {
               <button
                 // style={{ background: loader ? "#ccc" : "#f56565" }}
                 type="submit"
-                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-lg text-white text-sm">
+                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-lg text-white text-sm font-semibold sm:text-base">
                 Send Message
               </button>
             </form>
