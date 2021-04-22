@@ -1,0 +1,170 @@
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
+// import { db } from '../components/firebase';
+
+export default function Contact() {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_sz397ad', 'template_shif3ph', e.target, 'user_ZogDT8y9QjMMo4vM44or9')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+    alert("Your message has been sent successfully")
+  }
+
+
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+
+  // const [loader, setLoader] = useState(false);
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setLoader(true);
+
+  //   db.collection("contacts")
+  //     .add({
+  //       name: name,
+  //       email: email,
+  //       message: message,
+  //     })
+  //     .then(() => {
+  //       alert("Message has been submitted :)");
+  //       setLoader(false);
+  //     })
+  //     .catch((error) => {
+  //       alert(error.message);
+  //       setLoader(false);
+  //     });
+  // Empty input field after submitted...
+  //   setName('');
+  //   setEmail('');
+  //   setMessage('');
+  // };
+
+  return (
+    <div className="flex w-full min-h-screen justify-center items-center" id="contact">
+      <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-red-500 w-full max-w-4xl p-8 sm:p-12 rounded-xl sm:rounded-0 shadow-lg text-white overflow-hidden">
+        <div className="flex flex-col space-y-8 justify-between">
+          <div>
+            <h1 className="font-bold text-4xl tracking-wide">Contact me</h1>
+            <p className="pt-2 text-red-300 text-sm">
+              Reach out to me by filling in this form<br />
+                Reach out to me by filling in this form
+                Reach out to me by filling in this form
+            </p>
+          </div>
+          <div className="flex flex-col space-y-6">
+            <div className="inline-flex space-x-2 items-center">
+              <ion-icon
+                name="call-outline"
+                class="text-red-300 text-xl">
+              </ion-icon>
+              <span>0721-77 62 72</span>
+            </div>
+            <div className="inline-flex space-x-2 items-center">
+              <ion-icon
+                name="mail-outline"
+                class="text-red-300 text-xl">
+              </ion-icon>
+              <span>josefine.brorson@gmail.com</span>
+            </div>
+            <div className="inline-flex space-x-2 items-center">
+              <ion-icon
+                name="pin-outline"
+                class="text-red-300 text-xl">
+              </ion-icon>
+              <span>Stockholm, Sweden</span>
+            </div>
+          </div>
+          <div className="flex space-x-4 text-lg">
+            <a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+            <a href="#">
+              <ion-icon name="logo-github"></ion-icon
+              ></a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon
+              ></a>
+          </div>
+        </div>
+        <div>
+          <div className="bg-white rounded-xl shadow-lg p-8 text-gray-700 md:w-80">
+            <form
+              // onSubmit={handleSubmit}
+              onSubmit={sendEmail}
+              action=""
+              className="flex flex-col space-y-4">
+              <div>
+                <label for="" className="text-sm">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Enter subject"
+                  // value={name}
+                  // onChange={(e) => setName(e.target.value)}
+                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                    outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <div>
+                <label for="" className="text-sm">Your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  // value={name}
+                  // onChange={(e) => setName(e.target.value)}
+                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                    outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <div>
+                <label for="" className="text-sm">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  // value={email}
+                  // onChange={(e) => setEmail(e.target.value)}
+                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                    outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <div>
+                <label for="" className="text-sm">Your message</label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  name="message"
+                  placeholder="Your message"
+                  // value={message}
+                  // onChange={(e) => setMessage(e.target.value)}
+                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                    outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </div>
+              <button
+                // style={{ background: loader ? "#ccc" : "#f56565" }}
+                type="submit"
+                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-lg text-white text-sm">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+{/* export default Contact; */ }
+
+
