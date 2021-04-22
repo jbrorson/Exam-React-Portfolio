@@ -2,8 +2,9 @@ export default {
   nav: {
     logo: 'JB.',
     links: [
-      { text: 'Work', to: 'mywork' },
-      { text: 'Contact', to: 'mycontact' },
+      { text: 'About', to: 'about' },
+      { text: 'Projects', to: 'projects' },
+      { text: 'Contact', to: 'contact' },
     ],
   },
   header: {
@@ -46,4 +47,20 @@ export default {
     ],
     desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
   },
+
+  projects: {
+    title: 'Some of my projects',
+    project: [
+      {
+        img: process.env.PUBLIC_URL + '/assets/bev.png',
+        alt: 'bev',
+        text: 'the B-E-V App',
+      },
+      {
+        img: process.env.PUBLIC_URL + '/assets/onboard-kyh.png',
+        alt: 'kyh',
+        text: 'KYH onboarding',
+      },
+    ]
+  }
 };
