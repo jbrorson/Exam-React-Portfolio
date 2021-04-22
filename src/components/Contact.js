@@ -105,6 +105,7 @@ export default function Contact() {
               <div>
                 <label for="" className="text-sm">Subject</label>
                 <input
+                  required
                   type="text"
                   name="subject"
                   placeholder="Enter subject"
@@ -117,6 +118,7 @@ export default function Contact() {
               <div>
                 <label for="" className="text-sm">Your name</label>
                 <input
+                  required
                   type="text"
                   name="name"
                   placeholder="Your name"
@@ -129,6 +131,7 @@ export default function Contact() {
               <div>
                 <label for="" className="text-sm">Your email</label>
                 <input
+                  required
                   type="email"
                   name="email"
                   placeholder="Your email"
@@ -141,6 +144,7 @@ export default function Contact() {
               <div>
                 <label for="" className="text-sm">Your message</label>
                 <textarea
+                  required
                   rows="4"
                   type="text"
                   name="message"
@@ -165,6 +169,5 @@ export default function Contact() {
   )
 }
 
-{/* export default Contact; */ }
 
 
