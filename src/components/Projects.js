@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import content from '../content';
 
 function Projects() {
   return (
@@ -9,8 +11,20 @@ function Projects() {
         <div className="block md:inline-block w-full">
           <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm sm:w-full mx-auto bg-white rounded my-5 rounded-xl sm:rounded-0 shadow-lg over-hidden">
             <div className="p-4 md:w-full">
+              {/* <div className="flex flex-wrap justify-center">
+                {content.jobs.job.map((job, index) => {
+                  return (
+                    <span
+                      className={`${index % 2 === 0 ? ' animate-float' : ' animate-refloat'
+                        } w-40 h-40 bg-white shadow-2xl m-2 rounded-full flex items-center p-5 `}
+                    >
+                      <LazyLoadImage src={job.img} alt={job.alt} />
+                    </span>
+                  );
+                })}
+              </div> */}
               <img
-                className="object-cover"
+                className="object-cover py-2"
                 src="assets/bev.png"
                 alt="Work that I have done" />
             </div>
