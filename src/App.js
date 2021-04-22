@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import MyStack from './components/MyStack';
 import Contact from './components/Contact';
 import MyWork from './components/MyWork';
+import Projects from './components/Projects';
 import './tailwind.output.css';
 
 const App = () => (
@@ -11,7 +12,8 @@ const App = () => (
     <Navigation />
     <Hero />
     <MyStack />
-    <MyWork />
+    {/* <MyWork /> */}
+    <Projects />
     <Contact />
   </div>
 );
