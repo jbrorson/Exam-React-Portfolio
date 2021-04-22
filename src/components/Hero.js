@@ -28,11 +28,11 @@ function Header() {
           </iframe>
         </div>
         <div className="text-center md:text-left">
-          <h2 className={`${animated ? '' : 'translate-y-10 opacity-0'} transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}>
+          <h2 className={`${animated ? '' : 'translate-y-10 opacity-0'} transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold text-gray-800`}>
             {content.header.text[0]}{' '}
             {content.header.text[1]}
           </h2>
-          <h1 className={`${animated ? '' : 'translate-y-10 opacity-0'} transform transition duration-1000 ease-in-out font-bold text-xl text-gray-600`}>{content.header.text[2]}{' '}
+          <h1 className={`${animated ? '' : 'translate-y-10 opacity-0'} transform transition duration-1000 ease-in-out font-semibold text-xl text-gray-700`}>{content.header.text[2]}{' '}
             <Typical
               steps={content.header.typical}
               loop={Infinity}
