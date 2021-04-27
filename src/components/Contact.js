@@ -49,8 +49,8 @@ export default function Contact() {
   // };
 
   return (
-    <div className="flex w-full min-h-screen justify-center items-center" id="contact">
-      <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-red-500 w-full max-w-4xl p-8 sm:p-12 rounded-xl sm:rounded-0 shadow-lg text-white overflow-hidden">
+    <div className="flex w-full justify-center items-center" id="contact">
+      <div className="flex flex-col justify-evenly md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-red-500 w-full p-8 sm:p-12 sm:rounded-0 text-white overflow-hidden">
         <div className="flex flex-col space-y-8 justify-between">
           <div>
             <h1 className="font-bold text-4xl tracking-wide">Contact me</h1>
@@ -95,14 +95,14 @@ export default function Contact() {
           </div>
         </div>
         <div>
-          <div className="bg-white rounded-xl shadow-lg p-8 text-gray-700 sm:w-80">
+          <div className="bg-white rounded-default shadow-xl p-8 text-gray-700 sm:w-80">
             <form
               // onSubmit={handleSubmit}
               onSubmit={sendEmail}
               action=""
               className="flex flex-col space-y-4">
               <div>
-                <label for="" className="text-sm sm:text-base">Subject</label>
+                <label for="" className="text-sm sm:text-base">Subject *</label>
                 <input
                   required
                   type="text"
@@ -110,12 +110,12 @@ export default function Contact() {
                   placeholder="Enter subject"
                   // value={name}
                   // onChange={(e) => setName(e.target.value)}
-                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                  className="bg-gray-200 ring-1 ring-gray-500 w-full rounded-sm px-4 py-2 mt-2 
                     outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
               <div>
-                <label for="" className="text-sm sm:text-base">Your name</label>
+                <label for="" className="text-sm sm:text-base">Your name *</label>
                 <input
                   required
                   type="text"
@@ -123,12 +123,12 @@ export default function Contact() {
                   placeholder="Your name"
                   // value={name}
                   // onChange={(e) => setName(e.target.value)}
-                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                  className="bg-gray-200 ring-1 ring-gray-500 w-full rounded-sm px-4 py-2 mt-2 
                     outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
               <div>
-                <label for="" className="text-sm sm:text-base">Your email</label>
+                <label for="" className="text-sm sm:text-base">Your email *</label>
                 <input
                   required
                   type="email"
@@ -136,12 +136,12 @@ export default function Contact() {
                   placeholder="Your email"
                   // value={email}
                   // onChange={(e) => setEmail(e.target.value)}
-                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                  className="bg-gray-200 ring-1 ring-gray-500 w-full rounded-sm px-4 py-2 mt-2 
                     outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
               <div>
-                <label for="" className="text-sm sm:text-base">Your message</label>
+                <label for="" className="text-sm sm:text-base">Your message *</label>
                 <textarea
                   required
                   rows="4"
@@ -150,14 +150,15 @@ export default function Contact() {
                   placeholder="Your message"
                   // value={message}
                   // onChange={(e) => setMessage(e.target.value)}
-                  className="ring-1 ring-gray-400 w-full rounded-md px-4 py-2 mt-2 
+                  className="bg-gray-200 ring-1 ring-gray-500 w-full rounded-sm px-4 py-2 mt-2 
                     outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
+              <i className="text-gray-600">Please note that all inputs are required</i>
               <button
                 // style={{ background: loader ? "#ccc" : "#f56565" }}
                 type="submit"
-                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-lg text-white text-sm font-semibold sm:text-base">
+                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-xl text-white text-sm font-semibold sm:text-base">
                 Send Message
               </button>
             </form>
