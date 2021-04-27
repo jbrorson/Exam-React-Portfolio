@@ -1,7 +1,7 @@
 let timelineElements = [
   {
     id: 1,
-    title: "Intern, Frontend Developer",
+    title: "Frontend Developer - intern",
     companyName: "KYH Stockholm",
     description: "I did my second part of LIA on my school by buildning an application for them.",
     location: "Stockholm, Sweden",
@@ -10,7 +10,7 @@ let timelineElements = [
   },
   {
     id: 2,
-    title: "Intern, Frontend Developer",
+    title: "Frontend Developer - intern",
     companyName: "Talent Venture Group",
     description: "I did my first part of my LIA (internship) on TVG which is a investment company based in Stockholm. I worked in two seperate teams during my time there.",
     location: "Stockholm, Sweden",
@@ -20,7 +20,7 @@ let timelineElements = [
   {
     id: 3,
     title: "EXAM - Frontend Developer",
-    companyName: "KYH",
+    companyName: "KYH Stockholm",
     description: "Graduated!! After 1,5 years of study I have now finished my polytechnic education.",
     location: "Stockholm, Sweden",
     date: "AUG19 - MAY21",
