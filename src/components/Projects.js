@@ -5,11 +5,11 @@ import content from '../content';
 function Projects() {
   return (
     <div className="flex flex-col min-h-screen h-max-height justify-center items-center bg-green-200 p-8">
-      <h1 className="text-5xl font-bold sans:lobster text-gray-800"
+      <h1 className="text-5xl font-bold text-gray-800"
         style={{ fontFamily: 'lobster' }}>Some of my projects</h1>
       <div className="mt-10 md:grid grid-cols-2 gap-8 ">
         <div className="block md:inline-block w-full">
-          <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm sm:w-full mx-auto bg-white rounded my-5 rounded-xl sm:rounded-0 shadow-lg over-hidden">
+          <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm sm:w-full mx-auto bg-white my-5 rounded-default sm:rounded-0 shadow-lg over-hidden">
             <div className="p-4 md:w-full">
               {/* <div className="flex flex-wrap justify-center">
                 {content.jobs.job.map((job, index) => {
@@ -35,7 +35,7 @@ function Projects() {
                 <div>
                   <div>
                     <a
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-lg text-white text-sm font-semibold sm:text-base"
+                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-md text-white text-sm font-semibold sm:text-base"
                       href="https://github.com/knoxgon/stock-market-dashboard"
                     >
                       to code
@@ -47,7 +47,7 @@ function Projects() {
           </div>
         </div>
         <div className="block md:inline-block">
-          <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm mx-auto bg-white rounded my-5 rounded-xl sm:rounded-0 shadow-lg over-hidden">
+          <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm mx-auto bg-white my-5 rounded-default sm:rounded-0 shadow-lg over-hidden">
             <div className="p-4 md:w-full">
               <img
                 src="assets/onboard-kyh.png"
@@ -60,7 +60,7 @@ function Projects() {
                 <div>
                   <div>
                     <a
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-lg text-white text-sm font-semibold sm:text-base"
+                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-md text-white text-sm font-semibold sm:text-base"
                       href="https://github.com/knoxgon/stock-market-dashboard"
                     >
                       to code
