@@ -14,9 +14,9 @@ function MyTimeline() {
 
   return (
     <div className="flex flex-col min-h-screen h-max-height justify-center items-center bg-green-200 p-8">
-      <h1 className="text-5xl font-bold sans:lobster text-gray-800"
-        style={{ fontFamily: 'lobster' }}>Some of my projects</h1>
-      <div className="Timeline">
+      <h1 className="mt-20 text-5xl font-bold sans:lobster text-gray-800"
+        style={{ fontFamily: 'lobster' }}>Summury of Dev experiences</h1>
+      <div className="m-20">
 
         <VerticalTimeline>
           {timelineElements.map((element) => {

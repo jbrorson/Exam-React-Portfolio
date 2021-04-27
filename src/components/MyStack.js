@@ -12,7 +12,7 @@ function MyStack() {
       <h1
         className="text-5xl font-bold text-gray-800 mb-12"
         style={{ fontFamily: 'lobster' }}>Stack I use</h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="m-10 flex flex-wrap justify-center">
         {content.stack.tech.map((tech, index) => {
           return (
             <span
