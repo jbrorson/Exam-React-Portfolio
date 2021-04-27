@@ -53,7 +53,9 @@ export default function Contact() {
       <div className="flex flex-col justify-evenly md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-red-500 w-full p-8 sm:p-12 sm:rounded-0 text-white overflow-hidden">
         <div className="flex flex-col space-y-8 justify-between">
           <div>
-            <h1 className="font-bold text-4xl tracking-wide">Contact me</h1>
+            <h1
+              style={{ fontFamily: 'lobster' }}
+              className="font-bold text-5xl tracking-wide">Contact me</h1>
             <p className="pt-2 text-red-300 text-sm sm:text-base">
               Reach out to me by filling in this form.<br />
               I will definetly like to here from you. Maybe we could meet for a coffee?
