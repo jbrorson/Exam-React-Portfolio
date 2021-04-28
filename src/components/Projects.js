@@ -4,7 +4,7 @@ import React from 'react';
 
 function Projects() {
   return (
-    <div className="flex flex-col min-h-screen h-max-height justify-center items-center bg-green-200 p-8">
+    <div className="flex flex-col min-h-screen h-max-height justify-center items-center bg-green-200 p-8" id="projects">
       <h1 className="text-5xl font-bold text-gray-800"
         style={{ fontFamily: 'lobster' }}>Some of my projects</h1>
       <div className="mt-10 md:grid grid-cols-2 gap-8 ">
