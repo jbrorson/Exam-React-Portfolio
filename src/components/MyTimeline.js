@@ -13,7 +13,7 @@ function MyTimeline() {
   let eduIconStyles = { background: "#3da3d5" };
 
   return (
-    <div className="flex flex-col items-center bg-green-200 p-8">
+    <div className="flex flex-col items-center bg-green-200 p-8" id="timeline">
       <h1 className="flex flex-col items-center my-10 text-5xl text-gray-800"
         style={{ fontFamily: 'lobster' }}>Summury of Dev experiences</h1>
       <div className="md:m-2 sm:m-2 sm:w-80">
