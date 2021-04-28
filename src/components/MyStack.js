@@ -7,7 +7,7 @@ function MyStack() {
     <div
       // style={{ background: '#ebf8ff' }}
       className="min-h-screen flex flex-col items-center justify-center"
-      id="stack"
+      id="about"
     >
       <h1
         className="text-5xl font-bold text-gray-800 mb-8 mt-8"
