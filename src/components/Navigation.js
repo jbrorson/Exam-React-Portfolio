@@ -1,16 +1,17 @@
 import React from 'react';
 import content from '../content/index';
 import Avatar from '../components/icons/avatar.svg';
-
+import { animateScroll as scroll, Link } from 'react-scroll';
 
 const Navigation = ({ toggle }) => {
   return (
     <div>
       <div className="z-20 flex items-center justify-between w-full fixed mx-auto bg-white">
         <a
-          href="/"
+          onClick={() =>
+            scroll.scrollToTop()}
           style={{ fontFamily: 'Lobster' }}
-          className="ml-4 text-5xl sm:text-5xl font-bold text-red-500">{content.nav.logo}</a>
+          className="ml-4 text-5xl sm:text-5xl font-bold text-red-500 cursor-pointer">{content.nav.logo}</a>
         <div>
           <label
             for="menu-toggle"
@@ -30,11 +31,23 @@ const Navigation = ({ toggle }) => {
           className="hidden lg:flex lg:items-center lg:w-auto w-full"
           id="menu">
           <nav>
-            {content.nav.links.map((link, index) => {
+            <ul className="flex flex-row">
+              <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:text-red-500"
+                to="home" smooth={true} duration={1500}>Home</Link>
+              <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:text-red-500"
+                to="timeline" smooth={true} duration={1500}>Experiences</Link>
+              <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:text-red-500"
+                to="about" smooth={true} duration={1500}>About</Link>
+              <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:text-red-500"
+                to="projects" smooth={true} duration={1500}>Projects</Link>
+              <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:text-red-500"
+                to="contact" smooth={true} duration={1500}>Contact</Link>
+            </ul>
+            {/* {content.nav.links.map((link, index) => {
               return <span
                 key={index}
                 className="cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:text-red-500">{link.text}</span>;
-            })}
+            })} */}
           </nav>
           <a
             href="#"
