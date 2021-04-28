@@ -87,18 +87,18 @@ export default function Contact() {
           <div className="flex space-x-4 text-lg">
             <a
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/josefine-brorson-b8a69a118/"
             >
               <ion-icon name="logo-linkedin" class="sm:text-3xl" /></a>
             <a
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
               href="https://github.com/jbrorson">
               <ion-icon name="logo-github" class="sm:text-3xl" /></a>
             <a
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
               href="https://www.instagram.com/jbrorson/">
               <ion-icon name="logo-instagram" class="sm:text-3xl" /></a>
           </div>
