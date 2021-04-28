@@ -27,7 +27,7 @@ function App() {
     window.addEventListener("resize", hideMenu)
 
     return () => {
-      window.removeEventListener('resize', hideMenu);
+      window.removeEventListener('resized', hideMenu);
     };
   })
 
