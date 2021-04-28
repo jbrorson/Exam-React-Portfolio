@@ -49,8 +49,8 @@ export default function Contact() {
   // };
 
   return (
-    <div className="flex w-full justify-center items-center" id="contact">
-      <div className="flex flex-col justify-evenly md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-red-500 w-full p-8 sm:p-12 sm:rounded-0 text-white overflow-hidden">
+    <div className="flex w-full min-h-screen justify-center items-center bg-red-500" id="contact">
+      <div className="flex flex-col justify-evenly md:flex-row md:space-x-6 space-y-6 md:space-y-0 w-full p-8 sm:p-12 sm:rounded-0 text-white overflow-hidden">
         <div className="flex flex-col space-y-8 justify-between">
           <div>
             <h1
