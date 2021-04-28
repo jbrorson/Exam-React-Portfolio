@@ -11,7 +11,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center" id="home">
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
         <div className="w-full mr-10 md:w-2/5">
           <iframe
