@@ -13,8 +13,8 @@ function MyTimeline() {
   let eduIconStyles = { background: "#3da3d5" };
 
   return (
-    <div className="flex flex-col min-h-screen h-max-height justify-center items-center bg-green-200 p-8">
-      <h1 className="flex flex-col items-center mt-20 mb-20 text-5xl text-gray-800 sm:mt-40"
+    <div className="flex flex-col items-center bg-green-200 p-8">
+      <h1 className="flex flex-col items-center my-10 text-5xl text-gray-800"
         style={{ fontFamily: 'lobster' }}>Summury of Dev experiences</h1>
       <div className="md:m-2 sm:m-2 sm:w-80">
 
@@ -24,7 +24,6 @@ function MyTimeline() {
 
             return (
               <VerticalTimelineElement
-                // style={{ left: "15%", }}
                 key={element.key}
                 date={element.date}
                 dateClassName="date"
@@ -42,6 +41,10 @@ function MyTimeline() {
             );
           })}
         </VerticalTimeline>
+        <div className="flex flex-col justify-center items-center my-10 border-t-2 border-white">
+          <h2 className="text-xl mt-8 text-gray-700">Want to know more about my career? Go ahead and download my resume.</h2>
+          <button className="animate-float px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-xl text-white text-sm font-semibold sm:text-base">Download</button>
+        </div>
       </div>
     </div>
   )
