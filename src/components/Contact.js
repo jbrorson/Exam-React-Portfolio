@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react';
 import emailjs from 'emailjs-com';
 // import { db } from '../components/firebase';
 
@@ -85,15 +85,22 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex space-x-4 text-lg">
-            <a href="#">
-              <ion-icon name="logo-linkedin" class="sm:text-3xl"></ion-icon
-              ></a>
-            <a href="#">
-              <ion-icon name="logo-github" class="sm:text-3xl"></ion-icon
-              ></a>
-            <a href="#">
-              <ion-icon name="logo-instagram" class="sm:text-3xl"></ion-icon
-              ></a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/josefine-brorson-b8a69a118/"
+            >
+              <ion-icon name="logo-linkedin" class="sm:text-3xl" /></a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/jbrorson">
+              <ion-icon name="logo-github" class="sm:text-3xl" /></a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/jbrorson/">
+              <ion-icon name="logo-instagram" class="sm:text-3xl" /></a>
           </div>
         </div>
         <div>
