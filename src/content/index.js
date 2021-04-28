@@ -2,6 +2,8 @@ export default {
   nav: {
     logo: 'JB.',
     links: [
+      { text: 'Home', to: 'home' },
+      { text: 'Experiences', to: 'experiences' },
       { text: 'About', to: 'about' },
       { text: 'Projects', to: 'projects' },
       { text: 'Contact', to: 'contact' },
