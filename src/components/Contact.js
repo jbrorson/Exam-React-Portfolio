@@ -84,8 +84,20 @@ export default function Contact() {
               <span>Stockholm, Sweden</span>
             </div>
           </div>
-          <div className="flex space-x-4 text-lg">
-            <a
+          <div className="flex text-lg items-center">
+            <div className="flex items-center">
+              <div className="flex inline-block bg-gray-100 p-2 rounded-3xl text-red-500"><ion-icon name="logo-linkedin" class="sm:text-3xl" /></div>
+              <span className="px-2 text-base">Linkedin</span>
+            </div>
+            <div className="flex items-center">
+              <div className="flex inline-block bg-gray-100 p-2 rounded-3xl text-red-500"><ion-icon name="logo-github" class="sm:text-3xl" /></div>
+              <span className="px-2 text-base">Github</span>
+            </div>
+            <div className="flex items-center">
+              <div className="flex inline-block bg-gray-100 p-2 rounded-3xl text-red-500"><ion-icon name="logo-instagram" class="sm:text-3xl" /></div>
+              <span className="px-2 text-base">Instagram</span>
+            </div>
+            {/* <a
               target="_blank"
               rel="noreferrer"
               href="https://www.linkedin.com/in/josefine-brorson-b8a69a118/"
@@ -100,7 +112,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
               href="https://www.instagram.com/jbrorson/">
-              <ion-icon name="logo-instagram" class="sm:text-3xl" /></a>
+              <ion-icon name="logo-instagram" class="sm:text-3xl" /></a> */}
           </div>
         </div>
         <div>
