@@ -10,7 +10,7 @@ function MyStack() {
       id="about"
     >
       <h1
-        className="text-5xl font-bold text-gray-800 mb-8 mt-8"
+        className="text-5xl text-gray-800 mb-8 mt-8"
         style={{ fontFamily: 'lobster' }}>Stack I use</h1>
       <div className="m-10 flex flex-wrap justify-center">
         {content.stack.tech.map((tech, index) => {
@@ -24,7 +24,7 @@ function MyStack() {
           );
         })}
       </div>
-      <p className="w-11/12 md:max-w-xl text-xl text-center mt-8 mb-8 text-gray-700">
+      <p className="w-11/12 md:max-w-xl text-xl mt-8 mb-8 text-gray-700">
         {content.stack.desc}
       </p>
     </div>

@@ -35,7 +35,7 @@ function Projects() {
                 <div>
                   <div>
                     <a
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-md text-white text-sm font-semibold sm:text-base"
+                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500"
                       href="https://github.com/knoxgon/stock-market-dashboard"
                     >
                       to code
@@ -60,7 +60,7 @@ function Projects() {
                 <div>
                   <div>
                     <a
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-md text-white text-sm font-semibold sm:text-base"
+                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500"
                       href="https://github.com/knoxgon/stock-market-dashboard"
                     >
                       to code

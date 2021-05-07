@@ -41,10 +41,10 @@ function MyTimeline() {
             );
           })}
         </VerticalTimeline>
-        <div className="flex flex-col justify-center items-center my-10 border-t-2 border-white">
+        {/* <div className="flex flex-col justify-center items-center my-10 border-t-2 border-white">
           <h2 className="text-xl mt-8 text-gray-700">Want to know more about my career? Go ahead and download my resume.</h2>
           <button className="animate-float px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-xl text-white text-sm font-semibold sm:text-base">Download</button>
-        </div>
+        </div> */}
       </div>
     </div>
   )

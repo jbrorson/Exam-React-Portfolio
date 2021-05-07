@@ -167,7 +167,7 @@ export default function Contact() {
               <button
                 // style={{ background: loader ? "#ccc" : "#f56565" }}
                 type="submit"
-                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-500 rounded-3xl shadow-xl text-white text-sm font-semibold sm:text-base">
+                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-xl text-white text-sm font-semibold sm:text-base hover:bg-red-500">
                 Send Message
               </button>
             </form>

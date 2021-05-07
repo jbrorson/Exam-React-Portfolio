@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Avatar from '../components/icons/avatar.svg';
+// import Avatar from '../components/icons/avatar.svg';
 
 const Dropdown = ({ isOpen, toggle }) => {
   return (
@@ -11,16 +11,31 @@ const Dropdown = ({ isOpen, toggle }) => {
     >
       <nav>
         <ul className="flex flex-col">
-          <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
-            to="home" smooth={true} duration={1500}>Home</Link>
-          <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
-            to="timeline" smooth={true} duration={1500}>Experiences</Link>
-          <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
-            to="about" smooth={true} duration={1500}>About</Link>
-          <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
-            to="projects" smooth={true} duration={1500}>Projects</Link>
-          <Link className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100 mb-5"
-            to="contact" smooth={true} duration={1500}>Contact</Link>
+          <Link
+            className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
+            to="home"
+            smooth={true}
+            duration={1500}>Home</Link>
+          <Link
+            className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
+            to="timeline"
+            smooth={true}
+            duration={1500}>Experiences</Link>
+          <Link
+            className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
+            to="about"
+            smooth={true}
+            duration={1500}>About</Link>
+          <Link
+            className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
+            to="projects"
+            smooth={true}
+            duration={1500}>Projects</Link>
+          <Link
+            className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100 mb-5"
+            to="contact"
+            smooth={true}
+            duration={1500}>Contact</Link>
         </ul>
       </nav>
       {/* <a

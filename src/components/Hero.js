@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Link as ScrollLink } from 'react-scroll';
+import { animateScroll as scroll, Link } from 'react-scroll';
 import content from '../content/index';
 import Typical from 'react-typical';
 
@@ -9,6 +9,8 @@ function Header() {
   useEffect(() => {
     setAnimated(true);
   }, []);
+
+  const [show, setShow] = useState(false);
 
   return (
     <div className="min-h-screen flex items-center justify-center" id="home">
@@ -39,11 +41,23 @@ function Header() {
               className="inline-block"
             />
           </h1>
-          <ScrollLink to="stack" smooth={true}>
-            <button className="animate-float bg-red-500 px-5 py-3 uppercase mt-10 rounded-sm shadow-md text-white font-semibold sm:text-base">
-              {content.header.btnText}
-            </button>
-          </ScrollLink>
+          {show ? <p className="mt-5 text-gray-700">I'm 28 years old, born and raised in Blekinge. I've played soccer since I was 6,-<br />witch means I'm a good team player.<br />
+          I've programming for almost two years now and I'm ready for my first real job in tech.<br />
+          I love spending time with my boyfriend and our black lab.</p> : null}
+          {/* <div className="flex flex-row"> */}
+          {/* <Link to="gettoknowme" smooth={true}> */}
+          <button
+            onClick={() => setShow(!show)}
+            className="animate-float flex items-center space-x-2 bg-red-400 uppercase p-4 mt-8 rounded-md shadow-md text-white font-semibold sm:text-base hover:bg-red-500">
+            <span>{content.header.btnText}</span>
+            {/* <span className="hidden w-5 h-5 hover:visible"><ion-icon name="arrow-forward-outline"></ion-icon></span> */}
+          </button>
+          {/* <button className="flex items-center space-x-2 bg-red-500 uppercase p-4 mt-5 mx-5 rounded-sm shadow-md text-white font-semibold sm:text-base">
+              <span>Download cv</span>{' '}
+              <span className="w-5 h-5"><ion-icon name="cloud-download-outline"></ion-icon></span>
+            </button> */}
+          {/* </Link> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

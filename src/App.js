@@ -9,6 +9,7 @@ import MyTimeline from './components/MyTimeline';
 
 import './tailwind.output.css';
 import Dropdown from './components/Dropdown';
+// import GetToKnowMe from './components/GetToKnowMe';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,7 @@ function App() {
       <Navigation toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Hero />
+      {/* <GetToKnowMe /> */}
       <MyTimeline />
       <MyStack />
       {/* <MyWork /> */}
