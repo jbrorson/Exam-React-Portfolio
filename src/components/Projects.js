@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
+import { Link } from 'react-scroll';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 // import content from '../content';
 
 function Projects() {
+  const history = useHistory();
+
+  const location = useLocation();
+  useEffect(() => {
+  }, [location]);
+
+  // const handleClick = () => {
+  //   history.push("/singleproject");
+
+  // }
+
   return (
     <div className="flex flex-col min-h-screen h-max-height justify-center items-center bg-green-200 p-8" id="projects">
       <h1 className="text-5xl font-bold text-gray-800"
@@ -34,12 +47,20 @@ function Projects() {
                 <p className="m-2 text-gray-700 text-sm md:text-base">During the investment approach, there are many questions that rises whether to sell, buy, or hold stocks.</p>
                 <div>
                   <div>
-                    <button
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-500 transform hover:scale-105"
-                    // href="https://github.com/knoxgon/stock-market-dashboard"
-                    >
-                      read more
-                </button>
+                    <Link to="singleproject"
+                      smooth={true}
+                      duration={1500}>
+                      <button
+                        onClick={() => {
+                          history.push("/singleproject");
+                        }}
+                        type="button"
+                        className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-500 transform hover:scale-105"
+                      // href="https://github.com/knoxgon/stock-market-dashboard"
+                      >
+                        read more
+                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -65,7 +86,7 @@ function Projects() {
                     // href="https://github.com/knoxgon/stock-market-dashboard"
                     >
                       read more
-                </button>
+                    </button>
                   </div>
                 </div>
               </div>
