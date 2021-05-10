@@ -86,17 +86,17 @@ export default function Contact() {
           </div>
           <div className="flex text-lg items-center">
             <div className="flex items-center">
-              <div className="flex inline-block bg-gray-100 p-2 rounded-3xl text-red-500"><ion-icon name="logo-linkedin" class="sm:text-3xl" /></div>
+              <div className="flex transform hover:scale-105 cursor-pointer"><ion-icon name="logo-linkedin" class="sm:text-3xl" /></div>
               <span className="px-2 text-base">Linkedin</span>
             </div>
             <div className="flex items-center">
-              <div className="flex inline-block bg-gray-100 p-2 rounded-3xl text-red-500"><ion-icon name="logo-github" class="sm:text-3xl" /></div>
+              <div className="flex transform hover:scale-105 cursor-pointer"><ion-icon name="logo-github" class="sm:text-3xl" /></div>
               <span className="px-2 text-base">Github</span>
             </div>
-            <div className="flex items-center">
-              <div className="flex inline-block bg-gray-100 p-2 rounded-3xl text-red-500"><ion-icon name="logo-instagram" class="sm:text-3xl" /></div>
+            {/* <div className="flex items-center">
+              <div className="flex"><ion-icon name="logo-instagram" class="sm:text-3xl" /></div>
               <span className="px-2 text-base">Instagram</span>
-            </div>
+            </div> */}
             {/* <a
               target="_blank"
               rel="noreferrer"
@@ -179,7 +179,7 @@ export default function Contact() {
               <button
                 // style={{ background: loader ? "#ccc" : "#f56565" }}
                 type="submit"
-                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-xl text-white text-sm font-semibold sm:text-base hover:bg-red-500">
+                className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-xl text-white text-sm font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-500">
                 Send Message
               </button>
             </form>

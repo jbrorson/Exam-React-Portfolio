@@ -48,7 +48,7 @@ function Header() {
           {/* <Link to="gettoknowme" smooth={true}> */}
           <button
             onClick={() => setShow(!show)}
-            className="animate-float flex items-center space-x-2 bg-red-400 uppercase p-4 mt-8 rounded-md shadow-md text-white font-semibold sm:text-base hover:bg-red-500">
+            className="animate-float flex items-center space-x-2 bg-red-400 uppercase p-4 mt-8 rounded-md shadow-md text-white font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-500">
             <span>{content.header.btnText}</span>
             {/* <span className="hidden w-5 h-5 hover:visible"><ion-icon name="arrow-forward-outline"></ion-icon></span> */}
           </button>

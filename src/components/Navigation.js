@@ -33,28 +33,28 @@ const Navigation = ({ toggle }) => {
           <nav>
             <ul className="flex flex-row">
               <Link
-                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-700"
+                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-800 transition ease-out duration-700"
                 to="home"
                 smooth={true}
                 active="text-green-500"
                 duration={1500}>Home</Link>
               <Link
-                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-700"
+                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-800 transition ease-out duration-700"
                 to="timeline"
                 smooth={true}
                 duration={1500}>Experiences</Link>
               <Link
-                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-700"
+                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-800 transition ease-out duration-700"
                 to="about"
                 smooth={true}
                 duration={1500}>About</Link>
               <Link
-                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-700"
+                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-800 transition ease-out duration-700"
                 to="projects"
                 smooth={true}
                 duration={1500}>Projects</Link>
               <Link
-                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-700"
+                className="px-3 cursor-pointer text-md text-gray-600 font-medium px-4 py-3 border-b-2 border-transparent uppercase hover:text-gray-800 transition ease-out duration-700"
                 to="contact"
                 smooth={true}
                 duration={1500}>Contact</Link>

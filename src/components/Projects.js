@@ -34,12 +34,12 @@ function Projects() {
                 <p className="m-2 text-gray-700 text-sm md:text-base">During the investment approach, there are many questions that rises whether to sell, buy, or hold stocks.</p>
                 <div>
                   <div>
-                    <a
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500"
-                      href="https://github.com/knoxgon/stock-market-dashboard"
+                    <button
+                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-500 transform hover:scale-105"
+                    // href="https://github.com/knoxgon/stock-market-dashboard"
                     >
-                      to code
-                </a>
+                      read more
+                </button>
                   </div>
                 </div>
               </div>
@@ -47,9 +47,10 @@ function Projects() {
           </div>
         </div>
         <div className="block md:inline-block">
-          <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm mx-auto bg-white my-5 rounded-default sm:rounded-0 shadow-lg over-hidden">
+          <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm mx-auto bg-white my-5 rounded-default sm:rounded-0 shadow-lg overflow-hidden">
             <div className="p-4 md:w-full">
               <img
+                className=""
                 src="assets/onboard-kyh.png"
                 alt="Work that I have done" />
             </div>
@@ -59,12 +60,12 @@ function Projects() {
                 <p className="m-2 text-gray-700 text-sm md:text-base">During the investment approach, there are many questions that rises whether to sell, buy, or hold stocks.</p>
                 <div>
                   <div>
-                    <a
-                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500"
-                      href="https://github.com/knoxgon/stock-market-dashboard"
+                    <button
+                      className="inline-block self-end px-5 py-3 uppercase mt-10 bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-500 transform hover:scale-105"
+                    // href="https://github.com/knoxgon/stock-market-dashboard"
                     >
-                      to code
-                </a>
+                      read more
+                </button>
                   </div>
                 </div>
               </div>
