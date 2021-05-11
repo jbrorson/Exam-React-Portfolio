@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { animateScroll as scroll, Link } from 'react-scroll';
+// import { animateScroll as scroll, Link } from 'react-scroll';
 import content from '../content/index';
 import Typical from 'react-typical';
 
