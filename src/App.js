@@ -34,17 +34,17 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navigation toggle={toggle} />
-        <Dropdown isOpen={isOpen} toggle={toggle} />
-        <Hero />
-        <MyTimeline />
-        <MyStack />
-        <Projects />
-        <Switch />
-        <Route path="/singleproject" exact component={SingleProject} />
-        <Contact />
-      </Router>
+      {/* <Router> */}
+      <Navigation toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
+      <Hero />
+      <Projects />
+      {/* <Switch /> */}
+      {/* <Route path="/singleproject" exact component={SingleProject} /> */}
+      <MyStack />
+      <MyTimeline />
+      <Contact />
+      {/* </Router> */}
     </>
   );
 }
