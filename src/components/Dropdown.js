@@ -18,9 +18,9 @@ const Dropdown = ({ isOpen, toggle }) => {
             duration={1500}>Home</Link>
           <Link
             className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
-            to="timeline"
+            to="projects"
             smooth={true}
-            duration={1500}>Experiences</Link>
+            duration={1500}>Projects</Link>
           <Link
             className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
             to="about"
@@ -28,9 +28,9 @@ const Dropdown = ({ isOpen, toggle }) => {
             duration={1500}>About</Link>
           <Link
             className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100"
-            to="projects"
+            to="timeline"
             smooth={true}
-            duration={1500}>Projects</Link>
+            duration={1500}>Experiences</Link>
           <Link
             className="px-3 cursor-pointer text-xl text-gray-800 font-semibold px-4 py-3 border-b-2 border-transparent hover:bg-red-100 mb-5"
             to="contact"
