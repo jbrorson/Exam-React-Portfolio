@@ -7,8 +7,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Dropdown from './components/Dropdown';
 import './tailwind.output.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SingleProject from './components/SingleProject';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import SingleProject from './components/SingleProject';
 
 
 function App() {
