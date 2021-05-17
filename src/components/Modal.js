@@ -1,4 +1,5 @@
 import React from "react";
+import content from '../content/index';
 
 function Modal() {
   const [showModal, setShowModal] = React.useState(false);
@@ -22,7 +23,7 @@ function Modal() {
                 {/*header*/}
                 <div className="relative flex items-center mx-8">
                   <h3 className="text-3xl font-semibold text-gray-800">
-                    B-E-V Stockmarket Dashboard
+                    {content.popup.title[0]}
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -35,40 +36,26 @@ function Modal() {
                 </div>
                 {/*body*/}
                 <div className="grid grid-row mt-8">
-                  <h3 className="px-8 text-gray-800 text-2xl text-md">About this project...</h3>
+                  <h3 className="px-8 text-gray-800 text-2xl text-md">{content.popup.header[0]}</h3>
                   <p className="px-8 mt-2 text-gray-700 text-lg">
-                    I always felt like I could do anything. That’s the main
-                    thing people are controlled by! Thoughts- their perception
-                    of themselves! They're slowed down by their perception of
-                    themselves. If you're taught you can’t do anything, you
-                    won’t do anything. I was taught I could do everything. I always felt like I could do anything. That’s the main
-                    thing people are controlled by! Thoughts- their perception
-                    of themselves! They're slowed down by their perception
+                    {content.popup.text[0]}
                   </p>
-                  <h3 className="mt-8 px-8 text-gray-800 text-2xl text-md">From idea to reality...</h3>
+                  <h3 className="mt-8 px-8 text-gray-800 text-2xl text-md">{content.popup.header[1]}</h3>
                   <p className="px-8 mt-2 text-gray-700 text-lg leading-relaxed">
-                    I always felt like I could do anything. That’s the main
-                    thing people are controlled by! Thoughts- their perception
-                    of themselves! They're slowed down by their perception of
-                    themselves. If you're taught you can’t do anything, you
-                    won’t do anything. I was taught I could do everything.
+                    {content.popup.text[1]}
                   </p>
                   <div className="relative mx-8 mt-8 grid grid-cols-2 gap-8 sm:flex sm:flex-row">
                     <div className="">
-                      <h3 className="text-2xl text-gray-800">The process...</h3>
+                      <h3 className="text-2xl text-gray-800">{content.popup.header[2]}</h3>
                       <p className="my-4 text-gray-700 text-lg">
-                        I always felt like I could do anything. That’s the main
-                        thing people are controlled by! Thoughts- their perception
-                        of themselves! They're slowed down by their perception.
+                        {content.popup.text[2]}
                       </p>
                     </div>
                     <div>
-                      <h3 className="text-2xl text-gray-800">The team</h3>
+                      <h3 className="text-2xl text-gray-800">{content.popup.header[3]}</h3>
                       <p className="my-4 text-gray-700 text-lg">
-                        I always felt like I could do anything. That’s the main
-                        thing people are controlled by! Thoughts- their perception
-                        of themselves! They're slowed down by their perception.
-                    </p>
+                        {content.popup.text[3]}
+                      </p>
                     </div>
                   </div>
                 </div>
