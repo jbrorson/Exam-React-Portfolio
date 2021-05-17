@@ -41,8 +41,8 @@ function Header() {
               className="inline-block"
             />
           </h1>
-          {show ? <p className="mt-5 text-gray-700">I'm 28 years old, born and raised in Blekinge. I've played soccer since I was 6,-<br />witch means I'm a good team player.<br />
-          I've programming for almost two years now and I'm ready for my first real job in tech.<br />
+          {show ? <p className="container mt-5 text-gray-700 md:w-7/12">I'm 28 years old, born and raised in Blekinge. I've played soccer since I was 6,-witch means I'm a good team player.
+          I've programming for almost two years now and I'm ready for my first real job in tech.
           I love spending time with my boyfriend and our black lab.</p> : null}
           {/* <div className="flex flex-row"> */}
           {/* <Link to="gettoknowme" smooth={true}> */}
