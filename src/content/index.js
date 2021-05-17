@@ -34,7 +34,11 @@ export default {
     text: ["For this project we were going to build a dynamic page that contains login for user and admin. We had to use some kind of API to fetch data from and we used a stockmarket api. The task also included to display the data in different kind of charts.",
       "We had an idea of how to set this up and what kind of stack we wanted to use. We decided to go for React for the fronend and firebase as the backend. We used Redux to take care of state management.",
       "The fact that we had to think from two perspectives (user and admin) we had to set this up in some kind of backend. To manage that we used firebase. We also added themes that where added to the user based on settings in firebase.",
-      "As I think you know at this point this was a team project. The team was me, Elina Larsson, Volkan Guven and Fabian Thoma. We all was study Frontend development during this time and some of us had more experiences than others and we took advantage of that in a good way."
+      "As I think you know at this point this was a team project. The team was me, Elina Larsson, Volkan Guven and Fabian Thoma. We all was study Frontend development during this time and some of us had more experiences than others and we took advantage of that in a good way.",
+      "This project was a part of our LIA togather with KYH. Together with a team I had the opportunity to build a onboarding site with the main goal was to help new students with their onboarding process.",
+      "KYH provided us with a visual guideline when it comes to colors, font, and logo. Except from that we had the opportunity to develop this site as we wanted. We ran this project as a real one with daily standup etc. We also had meetings during the process with our customer (KYH).",
+      "We started out the project by building a couple of design prototypes, after that we started the developer journey. The frontend is built with React and we use firebase and Google oAuth for login.",
+      "I had the opportunity to work with Carmen Petrea and Kristian Boban during this project. My main area was the frontend part."
     ],
   },
   stack: {
