@@ -19,7 +19,7 @@ function Popup() {
           >
             <div className="flex justify-center relative h-2/3">
               {/*content*/}
-              <div className="w-2/3 md:h-1/2 p-8 border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
+              <div className="w-full md:w-3/4 max-h-80 p-8 border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="relative flex items-center mx-8">
                   <h3 className="text-3xl font-semibold text-gray-800">

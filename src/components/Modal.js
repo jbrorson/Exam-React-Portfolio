@@ -15,11 +15,11 @@ function Modal() {
       {showModal ? (
         <>
           <div
-            className="justify-center items-center m-8 flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
-            <div className="flex justify-center relative h-2/3">
+            <div className="flex justify-center">
               {/*content*/}
-              <div className="w-2/3 md:h-1/2 p-8 border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
+              <div className="w-full md:w-3/4 max-h-80 p-8 border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="relative flex items-center mx-8">
                   <h3 className="text-3xl font-semibold text-gray-800">
@@ -44,7 +44,7 @@ function Modal() {
                   <p className="px-8 mt-2 text-gray-700 text-lg leading-relaxed">
                     {content.popup.text[1]}
                   </p>
-                  <div className="relative mx-8 mt-8 grid grid-cols-2 gap-8 sm:flex sm:flex-row">
+                  <div className="mx-8 mt-8 grid grid-cols-2 gap-8">
                     <div className="">
                       <h3 className="text-2xl text-gray-800">{content.popup.header[2]}</h3>
                       <p className="my-4 text-gray-700 text-lg">
