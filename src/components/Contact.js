@@ -85,14 +85,33 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex text-lg items-center">
-            <div className="flex items-center">
-              <div className="flex transform hover:scale-105 cursor-pointer"><ion-icon name="logo-linkedin" class="sm:text-3xl" /></div>
+            <a
+              href="https://www.linkedin.com/in/josefine-brorson-b8a69a118/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center">
+              <div
+                className="flex transform hover:scale-105 cursor-pointer">
+                <ion-icon
+                  name="logo-linkedin"
+                  class="sm:text-3xl"
+                />
+              </div>
               <span className="px-2 text-base">Linkedin</span>
-            </div>
-            <div className="flex items-center">
-              <div className="flex transform hover:scale-105 cursor-pointer"><ion-icon name="logo-github" class="sm:text-3xl" /></div>
+            </a>
+            <a
+              href="https://github.com/jbrorson"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center">
+              <div
+                className="flex transform hover:scale-105 cursor-pointer">
+                <ion-icon
+                  name="logo-github"
+                  class="sm:text-3xl"
+                /></div>
               <span className="px-2 text-base">Github</span>
-            </div>
+            </a>
             {/* <div className="flex items-center">
               <div className="flex"><ion-icon name="logo-instagram" class="sm:text-3xl" /></div>
               <span className="px-2 text-base">Instagram</span>
