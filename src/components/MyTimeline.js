@@ -8,7 +8,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 
 import "react-vertical-timeline-component/style.min.css";
 
-function MyTimeline() {
+function MyTimeline({ key }) {
   let workIconStyles = { background: "#06D6A0" };
   let eduIconStyles = { background: "#3da3d5" };
 
