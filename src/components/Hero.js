@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className="min-h-screen flex items-center justify-center" id="home">
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full mr-10 md:w-2/5">
+        <div className="w-full mr-10 md:w-2/6">
           <iframe
             src="https://assets.pinterest.com/ext/embed.html?id=597149231841596188"
             height="588"
@@ -41,7 +41,7 @@ function Header() {
               className="inline-block"
             />
           </h1>
-          {show ? <p className="container mt-5 text-gray-700 md:w-7/12">I'm 28 years old, born and raised in Blekinge. I've played soccer since I was 6,-witch means I'm a good team player.
+          {show ? <p className="container mt-5 text-gray-700 md:w-1/2">I'm 28 years old, born and raised in Blekinge. I've played soccer since I was 6,-witch means I'm a good team player.
           I've programming for almost two years now and I'm ready for my first real job in tech.
           I love spending time with my boyfriend and our black lab.</p> : null}
           {/* <div className="flex flex-row"> */}
