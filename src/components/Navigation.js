@@ -1,9 +1,17 @@
 import React from 'react';
 import content from '../content/index';
 // import Avatar from '../components/icons/avatar.svg';
+// import jsPDF from 'jspdf';
 import { animateScroll as scroll, Link } from 'react-scroll';
+// import { myCV } from '../jb-eng-cv.pdf';
 
 const Navigation = ({ toggle }) => {
+
+  // const pdfGenerate = () => {
+  //   var doc = new jsPDF('landscape', 'px', 'a4', 'false');
+  //   doc.save('jb-eng-cv.pdf');
+  // }
+
   return (
     <div>
       <div className="z-20 flex items-center justify-between w-full fixed mx-auto bg-white">
@@ -58,7 +66,15 @@ const Navigation = ({ toggle }) => {
                 to="contact"
                 smooth={true}
                 duration={1500}>Contact</Link>
+              <a download="pdf/josefine.pdf"
+                href="resume.pdf"
+                // target="_blank"
+                // rel="noopener noreferrer"
+                // onClick={() => (pdfGenerate)}
+                className="inline-block mx-4 px-3 py-3 uppercase bg-red-400 rounded-md shadow-md text-white text-sm font-semibold sm:text-base hover:bg-red-500 transition ease-out duration-700">Download resume
+              </a>
             </ul>
+
             {/* {content.nav.links.map((link, index) => {
               return <span
                 key={index}
