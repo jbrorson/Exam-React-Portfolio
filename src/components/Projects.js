@@ -52,6 +52,27 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="block md:inline-block w-full">
+        <div className="flex flex-col md:flex-row md:max-w-4xl max-w-sm mx-auto bg-white my-5 rounded-default sm:rounded-0 shadow-lg overflow-hidden">
+          <div className="p-4 md:w-full">
+            <img
+              className="object-cover w-full"
+              src="assets/soup.png"
+              alt="Work that I have done" />
+          </div>
+          <div className="p-4">
+            <div className="flex flex-col justify-between">
+              <h1 className="m-2 text-gray-800 text-4xl font-bold md:text-2xl">Souper Healthy</h1>
+              <p className="m-2 text-gray-700">Souper Healthy is a food delivery app. This was first a UX project with a real wireframe prototype, that I later had to implement with code.</p>
+              <div>
+                <div>
+                  <Modal />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
