@@ -61,7 +61,7 @@ export default {
         alt: 'node',
       },
     ],
-    desc: `As a front-end developer, I have learned to work with a number of different techniques. I have a great understanding of how these interact. ReactJS, HTML5, CSS3 and NodeJS are a stack that I often use when I develop great websites.`,
+    desc: `As a front-end developer, I have learned to work with a number of different techniques. I have a great understanding of how these interact. ReactJS, HTML5, CSS3 and NodeJS are a stack that I often use when I develop websites.`,
   },
   jobs: {
     title: 'Some of my projects',
